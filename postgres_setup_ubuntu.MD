@@ -57,13 +57,21 @@ CREATE TABLE users (
 
 ### 8. Insert Sample Data into the `users` Table
 ```sql
+--  Insert sample data into the 'users' table.
 INSERT INTO users (username, email, password, role)
-VALUES 
-    ('john_doe', 'john.doe@example.com', 'hashed_password_1', 'user'),
-    ('jane_smith', 'jane.smith@sample.net', 'hashed_password_2', 'editor'),
-    ('peter_pan', 'peter.pan@neverland.org', 'hashed_password_3'),
-    ('alice_wonder', 'alice@wonderland.co.uk', 'hashed_password_4', TRUE),
-    ('bob_builder', 'bob@canwefixtit.com', 'hashed_password_5', FALSE, 'admin');
+VALUES ('john_doe', 'john.doe@example.com', 'hashed_password_1', 'user');
+
+INSERT INTO users (username, email, password, role)
+VALUES ('jane_smith', 'jane.smith@sample.net', 'hashed_password_2', 'editor');
+
+INSERT INTO users (username, email, password)
+VALUES ('peter_pan', 'peter.pan@neverland.org', 'hashed_password_3');  -- Uses default role 'user'
+
+INSERT INTO users (username, email, password, is_active)
+VALUES ('alice_wonder', 'alice@wonderland.co.uk', 'hashed_password_4', TRUE);
+
+INSERT INTO users (username, email, password, is_active, role)
+VALUES ('bob_builder', 'bob@canwefixtit.com', 'hashed_password_5', FALSE, 'admin');
 ```
 
 ---
