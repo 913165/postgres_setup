@@ -84,6 +84,15 @@ VALUES ('bob_builder', 'bob@canwefixtit.com', 'hashed_password_5', FALSE, 'admin
 
 ---
 
+## to connect from outside network (change your version instead of 14)
+
+/etc/postgresql/14/main/pg_hba.conf
+insert below line at last 
+
+```bash
+hostssl all postgres 0.0.0.0/0 md5
+```
+
 ## Final Steps
 
 Exit the `psql` session and return to your normal user:
