@@ -1,5 +1,4 @@
 
-```markdown
 # PostgreSQL Setup Script for Ubuntu
 
 This script installs and configures PostgreSQL on an Ubuntu system, creates a sample database, and a `users` table with some sample data.
@@ -88,4 +87,4 @@ exit
 ---
 
 Run this script step-by-step to set up PostgreSQL on your Ubuntu machine and initialize the database with sample data.
-```
+
