@@ -93,6 +93,17 @@ insert below line at last
 hostssl all postgres 0.0.0.0/0 md5
 ```
 
+```bash
+/etc/postgresql/14/main/postgresql.conf(change your version instead of 14)
+listen_addresses = '*'
+```
+
+and then restart services using below command
+
+```bash
+ sudo systemctl restart  postgresql
+```
+
 ## Final Steps
 
 Exit the `psql` session and return to your normal user:
