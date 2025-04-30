@@ -90,7 +90,7 @@ VALUES ('bob_builder', 'bob@canwefixtit.com', 'hashed_password_5', FALSE, 'admin
 insert below line at last 
 
 ```bash
-hostssl all postgres 0.0.0.0/0 md5
+host    all postgres 0.0.0.0/0 trust
 ```
 
 /etc/postgresql/14/main/postgresql.conf(change your version instead of 14)
