@@ -93,8 +93,8 @@ insert below line at last
 hostssl all postgres 0.0.0.0/0 md5
 ```
 
-```bash
 /etc/postgresql/14/main/postgresql.conf(change your version instead of 14)
+```bash
 listen_addresses = '*'
 ```
 
