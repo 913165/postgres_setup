@@ -1,4 +1,3 @@
-Here's the updated content of your `postgres_setup_ubuntu.sh` file in markdown format, along with comments for Unix commands:
 
 ```markdown
 # PostgreSQL Setup Script for Ubuntu
