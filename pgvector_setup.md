@@ -11,6 +11,8 @@ This guide provides a step-by-step process for installing PostgreSQL with the pg
 1.  **Install PostgreSQL common packages:**
 
     ```bash
+    sudo apt update
+    sudo apt upgrade
     sudo apt install -y postgresql-common
     ```
     * This command installs the necessary infrastructure and support files for managing PostgreSQL installations.
